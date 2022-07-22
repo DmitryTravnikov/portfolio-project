@@ -2,3 +2,12 @@ mixin header(props = {})
   - const {} = props;
 
   .header
+    .header__wrapper.wrapper
+      h3.header__name Dmitry #[span Travnikov]
+      nav.header__menu
+        li.header__menu-item
+          a.prevdef.header__menu-link(href="#") About
+        li.header__menu-item
+          a.prevdef.header__menu-link(href="#") Works
+        li.header__menu-item
+          a.prevdef.header__menu-link(href="#") Contact
