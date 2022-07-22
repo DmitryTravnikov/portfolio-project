@@ -1,4 +1,8 @@
 // Fonts
+$ib: 'Inter-Bold';
+$im: 'Inter-Medium';
+$ir: 'Inter-Regular';
+$isb: 'Inter-SemiBold';
 
 // Base typography
 
@@ -13,8 +17,9 @@ $font-size-h6: 1rem;
 
 $line-height: 1.5;
 
-$font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
+$font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu',
+  'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Semantic colors
 
@@ -22,17 +27,18 @@ $text-color: #08090a;
 $link-color: #3b49df;
 
 // Colors
-$space-grey: #222222;
-$pink: #E65B70;
+$space-grey: #171717;
+$pink: #e65b70;
 $purple: #512950;
 $red: #c4233e;
 $yellow: #ffdd00;
 $green: #07b75f;
-$orange: #F58220;
-$blue: #178CC6;
+$orange: #fec45d;
+$blue: #178cc6;
+$grey: #8b8b8b;
 
 $media-green: #254823;
-$media-pink: #59363B;
-$media-blue: #2B4146;
-$media-orange: #85552B;
-$media-purple: #2D1D34;
+$media-pink: #59363b;
+$media-blue: #2b4146;
+$media-orange: #85552b;
+$media-purple: #2d1d34;
