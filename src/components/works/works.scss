@@ -30,6 +30,9 @@
     width: 100%;
     @include flex(column, wrap, flex-start, flex-start);
     margin-top: 64px;
+    @media only screen and (min-width: 768px) {
+      @include flex(row, wrap, flex-start, flex-start);
+    }
   }
   &__item {
     width: 100%;
@@ -37,6 +40,16 @@
     margin-top: 40px;
     &:first-child {
       margin-top: 0px;
+    }
+    @media only screen and (min-width: 768px) {
+      width: calc((100% - calc(30px * 2)) / 2);
+      margin-top: 40px;
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        margin-top: 0px;
+      }
     }
   }
   &__item1 {
