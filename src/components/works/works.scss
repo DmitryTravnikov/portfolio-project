@@ -1,0 +1,169 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+.works {
+  &__wrapper {
+    padding: 40px 0px;
+  }
+  &__headline {
+    width: 100%;
+    margin: 0px;
+    font-family: $im;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    @media only screen and (min-width: 576px) {
+      font-size: 64px;
+    }
+  }
+  &__splitter {
+    width: 100%;
+    margin: 0px;
+    border: none;
+    height: 2px;
+    background: $orange;
+    margin-top: 32px;
+  }
+  &__content {
+    width: 100%;
+    @include flex(column, wrap, flex-start, flex-start);
+    margin-top: 64px;
+    @media only screen and (min-width: 768px) {
+      @include flex(row, wrap, flex-start, flex-start);
+    }
+  }
+  &__item {
+    width: 100%;
+    @include flex(column, wrap, flex-start, flex-start);
+    margin-top: 40px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    @media only screen and (min-width: 768px) {
+      width: calc((100% - calc(30px * 2)) / 2);
+      margin-top: 40px;
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+      &:nth-child(2) {
+        margin-top: 0px;
+      }
+    }
+  }
+  &__item1 {
+  }
+  &__item2 {
+  }
+  &__item3 {
+  }
+  &__item4 {
+  }
+  &__item5 {
+  }
+  &__item6 {
+  }
+  &__item:hover &__item-img {
+    transform: scale(1.3);
+  }
+  &__item-img-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+  }
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+  &__item-img1 {
+    background: url('../works/img/works__project1-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-img2 {
+    background: url('../works/img/works__project2-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-img3 {
+    background: url('../works/img/works__project3-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-img4 {
+    background: url('../works/img/works__project4-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-img5 {
+    background: url('../works/img/works__project5-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-img6 {
+    background: url('../works/img/works__project6-preview.webp');
+    background-position: center;
+    background-size: cover;
+  }
+  &__item-headline {
+    width: 100%;
+    margin: 0px;
+    font-family: $im;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    margin-top: 15px;
+  }
+  &__item-link {
+    text-decoration: none;
+    font-family: $isb;
+    font-size: 14px;
+    font-weight: 400;
+    color: $orange;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 4px;
+    padding-right: 2px;
+    &::before {
+      content: '';
+      width: 0px;
+      height: 1px;
+      background: $orange;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    &:hover::before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+// Bootstrap Media Queries
+// @include media-breakpoint-up(sm) {}
+// @include media-breakpoint-up(md) {}
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xxl) {}
+
+// Media Queries
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+}
+
+// * {@include outline()}
