@@ -3,11 +3,19 @@ mixin header(props = {})
 
   .header
     .header__wrapper.wrapper
-      h3.header__name Dmitry #[span Travnikov]
+      //- h3.header__name Dmitry #[span Travnikov]
+      h3.header__name Дмитрий #[span Травников]
+      //- nav.header__menu
+      //-   li.header__menu-item
+      //-     a.prevdef.header__menu-link(href="#") About
+      //-   li.header__menu-item
+      //-     a.prevdef.header__menu-link(href="#") Works
+      //-   li.header__menu-item
+      //-     a.prevdef.header__menu-link(href="#") Contact
       nav.header__menu
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") About
+          a.prevdef.header__menu-link(href="#") Обо мне
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") Works
+          a.prevdef.header__menu-link(href="#") Мои работы
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") Contact
+          a.prevdef.header__menu-link(href="#") Контакты
