@@ -44,16 +44,24 @@
     transition: 0.2s;
     &:last-child {
       margin-right: 0px;
-      color: #5662f6;
-      &:hover {
-        color: lighten(#5662f6, 3%);
-      }
     }
-    &:first-child {
-      color: #138ecb;
-      &:hover {
-        color: lighten(#138ecb, 3%);
-      }
+  }
+  &__telegram {
+    color: #138ecb;
+    &:hover {
+      color: lighten(#138ecb, 3%);
+    }
+  }
+  &__discord {
+    color: #5662f6;
+    &:hover {
+      color: lighten(#5662f6, 3%);
+    }
+  }
+  &__skype {
+    color: #2ba6e4;
+    &:hover {
+      color: lighten(#2ba6e4, 3%);
     }
   }
 }
