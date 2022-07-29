@@ -5,8 +5,8 @@ import 'normalize.css';
 import './scss/main.scss';
 import './libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js';
 
-$('.pagescroll2id__menu-link, .to-top-link').mPageScroll2id({
-  offset: 50,
+$('.header__menu-link').mPageScroll2id({
+  offset: 0,
   scrollSpeed: 200,
 });
 
