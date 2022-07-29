@@ -11,7 +11,6 @@
   position: fixed;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
   &:hover {
     background: darken($orange, 3%);
   }
@@ -27,7 +26,7 @@
     text-align: center;
   }
   &.mPS2id-highlight {
-    opacity: 0;
+    display: none;
   }
 }
 
