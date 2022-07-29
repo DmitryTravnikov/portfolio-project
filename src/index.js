@@ -4,6 +4,10 @@ import './favicons/favicons';
 import 'normalize.css';
 import './scss/main.scss';
 import './libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js';
+import WOW from 'wow.js';
+import 'animate.css';
+
+new WOW().init();
 
 $('.header__menu-link, .to-top-button').mPageScroll2id({
   offset: 0,
