@@ -1,21 +1,21 @@
 mixin header(props = {})
   - const {} = props;
 
-  .header
+  .header#top
     .header__wrapper.wrapper
       //- h3.header__name Dmitry #[span Travnikov]
       h3.header__name Дмитрий #[span Травников]
       //- nav.header__menu
       //-   li.header__menu-item
-      //-     a.prevdef.header__menu-link(href="#") About
+      //-     a.header__menu-link(href="#about") About
       //-   li.header__menu-item
-      //-     a.prevdef.header__menu-link(href="#") Works
+      //-     a.header__menu-link(href="#works") Works
       //-   li.header__menu-item
-      //-     a.prevdef.header__menu-link(href="#") Contact
+      //-     a.header__menu-link(href="#contact") Contact
       nav.header__menu
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") Обо мне
+          a.header__menu-link(href="#about") Обо мне
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") Мои работы
+          a.header__menu-link(href="#works") Мои работы
         li.header__menu-item
-          a.prevdef.header__menu-link(href="#") Контакты
+          a.header__menu-link(href="#contact") Контакты
