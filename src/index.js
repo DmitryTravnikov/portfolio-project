@@ -3,27 +3,33 @@
 import './favicons/favicons';
 import 'normalize.css';
 import './scss/main.scss';
+import './libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js';
+
+$('.pagescroll2id__menu-link, .to-top-link').mPageScroll2id({
+  offset: 50,
+  scrollSpeed: 200,
+});
 
 // Console Log
-export let cLog = function(n) {
-	return console.log(n);
+export let cLog = function (n) {
+  return console.log(n);
 };
 
 // Prevent Default
 function prevdef() {
-	let prevdefElems = document.querySelectorAll('.prevdef');
+  let prevdefElems = document.querySelectorAll('.prevdef');
 
-	for (let i = 0; i < prevdefElems.length; i++) {
-		prevdefElems[i].addEventListener('click', function(event) {
-			event.preventDefault();
-		});
-	}
+  for (let i = 0; i < prevdefElems.length; i++) {
+    prevdefElems[i].addEventListener('click', function (event) {
+      event.preventDefault();
+    });
+  }
 }
 prevdef();
 
 // Rendering Styles and JavaScript
 function importAll(r) {
-	r.keys().forEach(r);
+  r.keys().forEach(r);
 }
 
 importAll(require.context('./components', true, /\.(scss|js)$/));
