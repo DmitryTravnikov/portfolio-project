@@ -20,9 +20,18 @@
     font-size: 24px;
     color: $orange;
     text-align: center;
-    span {
-      color: #fff;
+    @media only screen and (min-width: 768px) {
+      text-align: left;
     }
+  }
+  &__name-white {
+    color: #fff;
+  }
+  &__name-grey {
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey;
+    // font-style: italic;
   }
   &__menu {
     @include flex(column, wrap, flex-start, center);

@@ -3,8 +3,14 @@ mixin header(props = {})
 
   .header#top
     .header__wrapper.wrapper
-      //- h3.header__name Dmitry #[span Travnikov]
-      h3.header__name Дмитрий #[span Травников]
+      //- h3.header__name Dmitry #[span.header__name-white Travnikov]
+      //-   |
+      //-   br
+      //-   | #[span.header__name-grey Web Developer]
+      h3.header__name Дмитрий #[span.header__name-white Травников]
+        |
+        br
+        | #[span.header__name-grey Веб-разработчик]
       //- nav.header__menu
       //-   li.header__menu-item
       //-     a.header__menu-link(href="#about") About
