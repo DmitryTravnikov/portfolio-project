@@ -5,9 +5,10 @@ include ../components/about/about
 include ../components/works/works
 include ../components/contact/contact
 include ../components/to-top-button/to-top-button
+include ../components/__preloader/preloader
 
 block head
-  - const pageTitle = "Portfoio";
+  - const pageTitle = "Portfolio";
   - const pageDescription = "";
   - const pageKeywords = "portfolio";
 
@@ -15,6 +16,7 @@ block content
   //- +welcome({
   //-   message: 'Welcome! <br/> Happy coding!'
   //- })
+  +preloader
   +header
   +about
   +works
