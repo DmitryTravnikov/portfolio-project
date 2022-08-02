@@ -1,5 +1,5 @@
 import { cLog } from '../../index.js';
 
 $(window).on('load', function () {
-  $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+  $('.preloader').delay(2000).fadeOut().end().fadeOut('slow');
 });
