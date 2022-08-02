@@ -3,6 +3,27 @@
 // @import '~bootstrap/scss/bootstrap-reboot';
 
 .preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  background: $space-grey;
+  &__element {
+    width: 30px;
+    height: 30px;
+    border: 4px solid $orange;
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation: spin 1s linear infinite;
+  }
 }
 
 // Bootstrap Media Queries
