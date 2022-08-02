@@ -2,33 +2,7 @@
 @import '../../scss/mixins';
 // @import '~bootstrap/scss/bootstrap-reboot';
 
-.to-top-button {
-  bottom: 0px;
-  right: 0px;
-  width: 60px;
-  height: 60px;
-  background: $orange;
-  position: fixed;
-  cursor: pointer;
-  text-decoration: none;
-  opacity: 1;
-  &:hover {
-    background: darken($orange, 3%);
-  }
-  &::before {
-    content: '\2191';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: $im;
-    font-size: 36px;
-    color: $space-grey;
-    text-align: center;
-  }
-  &.mPS2id-highlight {
-    opacity: 0;
-  }
+.preloader {
 }
 
 // Bootstrap Media Queries
