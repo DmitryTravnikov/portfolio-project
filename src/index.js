@@ -6,6 +6,8 @@ import './scss/main.scss';
 import './libs/pagescroll2id/jquery.malihu.PageScroll2id.min.js';
 import WOW from 'wow.js';
 import 'animate.css';
+import './libs/particles.js/particles.min.js';
+import './libs/particles.js/app.js';
 
 new WOW().init();
 
